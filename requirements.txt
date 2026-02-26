@@ -1,0 +1,7 @@
+flask
+flask-cors
+yfinance
+requests
+pandas
+numpy
+anthropic
