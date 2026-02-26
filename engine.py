@@ -39,7 +39,7 @@ GAP_THRESHOLD_PCT   = 5.0         # Minimum gap % to qualify
 VOLUME_MULT_MIN     = 1.8         # Minimum volume multiplier vs 20d average
 SHORT_INT_MIN       = 12.0        # Minimum short interest % to flag squeeze
 MAX_CANDIDATES      = 20          # Cap candidates sent to AI per cycle
-PORT                = 8080
+PORT                = int(os.environ.get("PORT", 8080))
 
 # ── Shared state (updated by background thread, read by Flask) ─────────────────
 STATE = {
